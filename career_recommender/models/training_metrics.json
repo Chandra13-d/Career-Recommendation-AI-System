@@ -1,0 +1,7 @@
+{
+  "val_accuracy": 0.1636005256241787,
+  "val_top3": null,
+  "n_samples_before_filter": 8876,
+  "n_samples_after_filter": 7609,
+  "n_classes_after_filter": 133
+}

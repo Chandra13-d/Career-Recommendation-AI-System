@@ -1,0 +1,119 @@
+
+
+
+{% extends "base.html" %}
+{% block content %}
+
+<!-- HERO HEADER -->
+<section class="contact-hero text-center py-5">
+    <div class="container">
+        <h1 class="fw-bold">Contact Us</h1>
+        <p class="hero-sub">We're here to help — feel free to reach out anytime!</p>
+    </div>
+</section>
+
+<!-- CONTACT CARD -->
+<section class="container mt-5">
+    <div class="contact-card p-5 mx-auto">
+
+        <h3 class="fw-bold text-primary mb-4 text-center">Get in Touch</h3>
+
+        <div class="row g-4">
+
+            <!-- Name -->
+            <div class="col-md-6">
+                <div class="contact-item">
+                    <div class="icon bg-primary"><i class="bi bi-person-fill"></i></div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Name</h6>
+                        <p class="text-muted mb-0">Chandra D</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="col-md-6">
+                <div class="contact-item">
+                    <div class="icon bg-success"><i class="bi bi-envelope-fill"></i></div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Email</h6>
+                        <p class="text-muted mb-0">preethamchandu1308@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="col-md-6">
+                <div class="contact-item">
+                    <div class="icon bg-warning"><i class="bi bi-telephone-fill"></i></div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Phone</h6>
+                        <p class="text-muted mb-0">8197728702</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Location -->
+            <div class="col-md-6">
+                <div class="contact-item">
+                    <div class="icon bg-purple"><i class="bi bi-geo-alt-fill"></i></div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Location</h6>
+                        <p class="text-muted mb-0">Mysore, Karnataka</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<style>
+/* HERO SECTION */
+.contact-hero {
+    background: linear-gradient(135deg, #4c8bf5, #00c6a7);
+    color: white;
+    border-radius: 14px;
+}
+.hero-sub {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* CARD */
+.contact-card {
+    background: #ffffff;
+    border-radius: 18px;
+    max-width: 750px;
+    border: 1px solid #eef2f7;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+/* CONTACT ITEMS */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px;
+    border-radius: 12px;
+    background: #f9fbff;
+    border: 1px solid #e8eff7;
+}
+
+.icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+}
+
+.bg-purple { background: #7c3aed !important; }
+</style>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+flask
+flask_sqlalchemy
+python-dotenv
+joblib
+pandas
+scikit-learn
+sentence-transformers
+lightgbm
+xgboost
+imbalanced-learn
+rapidfuzz
+pdfminer.six
+python-docx
+docx2txt
+PyMuPDF
+python-magic

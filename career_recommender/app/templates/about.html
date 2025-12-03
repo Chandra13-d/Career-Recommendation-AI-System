@@ -1,0 +1,133 @@
+
+
+{% extends "base.html" %}
+{% block content %}
+
+<!-- HERO SECTION -->
+<section class="hero-about text-center py-5">
+    <div class="container">
+        <h1 class="fw-bold mb-3">About Career AI</h1>
+        <p class="hero-sub">
+            Your personalized AI-powered career discovery engine.
+            Helping you find the career you were meant for.
+        </p>
+    </div>
+</section>
+
+
+<!-- MAIN CONTENT -->
+<section class="container mt-5">
+    <div class="modern-card p-5">
+
+        <h2 class="fw-bold text-primary mb-3">What is Career AI?</h2>
+        <p class="lead text-muted">
+            Career AI is an advanced recommendation system that analyzes your skills,
+            resume, personality trends, and interests to map you to the most accurate
+            career paths — powered by cutting-edge Machine Learning & NLP.
+        </p>
+
+        <hr class="my-4">
+
+        <h3 class="fw-bold mt-3 mb-3">🚀 Key Features</h3>
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="feature-item">
+                    <div class="feature-icon bg-primary"><i class="bi bi-magic"></i></div>
+                    <div>
+                        <h5 class="fw-bold">AI Skill Extraction</h5>
+                        <p class="text-muted">Automatically extracts skills from your resume using NLP.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="feature-item">
+                    <div class="feature-icon bg-purple"><i class="bi bi-cpu"></i></div>
+                    <div>
+                        <h5 class="fw-bold">ML Career Mapping</h5>
+                        <p class="text-muted">Predicts best-fit roles using LightGBM, XGBoost & SBERT embeddings.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="feature-item">
+                    <div class="feature-icon bg-success"><i class="bi bi-file-earmark-text"></i></div>
+                    <div>
+                        <h5 class="fw-bold">Resume Parsing</h5>
+                        <p class="text-muted">Supports PDF, DOCX, and TXT format with high accuracy.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="feature-item">
+                    <div class="feature-icon bg-warning"><i class="bi bi-bar-chart"></i></div>
+                    <div>
+                        <h5 class="fw-bold">Dashboard Insights</h5>
+                        <p class="text-muted">Track your past predictions and performance insights.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-4">
+
+        <h3 class="fw-bold">🧠 How It Works?</h3>
+        <p class="text-muted fs-5">
+            Career AI uses an ensemble of deep learning and traditional ML:
+        </p>
+
+        <ul class="styled-list text-muted fs-6">
+            <li>SBERT for semantic profile understanding</li>
+            <li>TF-IDF + SVD for lightweight text representation</li>
+            <li>PCA compressed embeddings for fast predictions</li>
+            <li>XGBoost & LightGBM ensemble for highest accuracy</li>
+            <li>Role-mapping trained on thousands of labeled samples</li>
+        </ul>
+
+    </div>
+</section>
+
+
+<style>
+/* HERO */
+.hero-about {
+    background: linear-gradient(135deg, #4c8bf5, #00c6a7);
+    color: white;
+    border-radius: 12px;
+}
+.hero-sub {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Card */
+.modern-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    border: 1px solid #eef2f7;
+}
+
+/* Features */
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.feature-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    color: white;
+}
+.bg-purple { background: #7c3aed !important; }
+</style>
+
+{% endblock %}

@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block content %}
+
+<style>
+/* Centered card */
+.register-wrapper {
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.register-wrapper:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 45px rgba(0,0,0,0.12);
+}
+
+/* Title */
+.register-title {
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+.register-sub {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* Inputs */
+.form-control {
+    height: 48px;
+    border-radius: 10px;
+}
+
+/* Button */
+.register-btn {
+    height: 48px;
+    border-radius: 12px;
+    background: linear-gradient(90deg,#00c6a7,#4c8bf5);
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.register-btn:hover {
+    opacity: 0.9;
+}
+
+/* Login link */
+.login-link {
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+}
+
+</style>
+
+<div class="register-wrapper">
+
+    <h2 class="register-title">Create Your Account</h2>
+    <p class="register-sub">Start your AI-powered career journey</p>
+
+    {% if error %}
+    <div class="alert alert-danger text-center">{{ error }}</div>
+    {% endif %}
+
+    <form method="post" action="{{ url_for('api.ui_register') }}">
+
+        <label class="form-label fw-semibold">Full Name</label>
+        <input name="full_name" class="form-control mb-3" type="text" placeholder="Your full name">
+
+        <label class="form-label fw-semibold">Email</label>
+        <input name="email" class="form-control mb-3" type="email" placeholder="Enter your email" required>
+
+        <label class="form-label fw-semibold">Password</label>
+        <input name="password" class="form-control mb-3" type="password" placeholder="Create password" required>
+
+        <button class="register-btn w-100 mt-2">Create Account</button>
+
+        <a href="{{ url_for('api.ui_login') }}" class="login-link">
+            Already have an account? <b>Login</b>
+        </a>
+
+    </form>
+</div>
+
+{% endblock %}
