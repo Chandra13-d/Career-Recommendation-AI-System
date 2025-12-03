@@ -5,39 +5,38 @@ AI-powered full-stack web application that analyzes resumes, extracts skills, an
 Built with Flask + SBERT + XGBoost + LightGBM + HuggingFace NER + MySQL + Bootstrap UI.
 
 🔥 Features
-✅ AI Capabilities
+## ✅ AI Capabilities
 
-Resume parsing (PDF, DOCX, TXT)
-HuggingFace NER (Name / Org Extraction)
-Skill extraction using NLP + smart keyword rules
-ML-based role prediction using:
-SBERT semantic embeddings
-TF-IDF + SVD dimensionality
-PCA reduction
-XGBoost & LightGBM ensemble
+* Resume parsing (PDF, DOCX, TXT)
+* HuggingFace NER (Name / Org Extraction)
+* Skill extraction using NLP + smart keyword rules
+* ML-based role prediction using:
+* SBERT semantic embeddings
+* TF-IDF + SVD dimensionality
+* PCA reduction
+* XGBoost & LightGBM ensemble
 
 90%+ accuracy from custom career-role dataset (mapped_roles.csv)
 
-✅ Full-Stack Web App
+## ✅ Full-Stack Web App
 
-Secure Login / Register with SQLAlchemy
-User dashboard showing prediction history
-Upload resume → instant results with detailed breakdown
-“Quick Predict” (enter skills → get roles)
-Admin-style model versioning & retraining support
-Modern UI with gradients, animations, icons
+* Secure Login / Register with SQLAlchemy
+* User dashboard showing prediction history
+* Upload resume → instant results with detailed breakdown
+* “Quick Predict” (enter skills → get roles)
+* Admin-style model versioning & retraining support
+* Modern UI with gradients, animations, icons
 
-✅ Database Features
+## ✅ Database Features
 
-User profile table
-Prediction history table
-Resume extraction saved
-Skill + role mapping
-Job cache table (future add-on)
+  User profile table
+  Prediction history table
+  Resume extraction saved
+  Skill + role mapping
+  Job cache table (future add-on)
 
-🧠 Architecture
-
-career_recommender/
+## 🧠 Architecture
+*  career_recommender/
 │── app/
 │   ├── api.py                 # Main backend routes / APIs
 │   ├── models/                # SQLAlchemy models
@@ -59,29 +58,34 @@ career_recommender/
 │── .env                       # Environment config
 │── README.md                  # (you are here)
 └── requirements.txt
+*
+## 🏗️ Tech Stack
+### Backend
 
-🏗️ Tech Stack
-Backend
+-> Python (Flask)
+-> SQLAlchemy ORM
+-> MySQL 
+-> Joblib (model storage)
 
-Python (Flask)
-SQLAlchemy ORM
-MySQL / MariaDB
-Joblib (model storage)
-
-Machine Learning
+### Machine Learning
 
 Sentence-Transformers (SBERT)
+
 Scikit-Learn (PCA, SVD, TF-IDF)
+
 XGBoost + LightGBM
+
 HuggingFace Transformers (NER)
 
-Frontend
+### Frontend
 
 Bootstrap 5
+
 JavaScript (Fetch API)
+
 Chart.js (Dashboard graphs)
 
-📦 Required Datasets
+## 📦 Required Datasets
 
 prediction-data.csv
 canonical_skills.csv
@@ -89,7 +93,7 @@ job_skills.csv
 profiles_clean.csv
 new_prediction-data.csv
 
-📦 Installation & Setup
+## 📦 Installation & Setup
 1️⃣ Clone the repository
 git clone https://github.com/yourusername/career-recommender-ai.git
 cd career-recommender-ai
@@ -124,7 +128,7 @@ python -m app.run_app
 
 Visit → http://127.0.0.1:5000/ui/home
 
-🎯 Machine Learning Model
+## 🎯 Machine Learning Model
 
 Training script:
 
@@ -151,16 +155,20 @@ metrics.json
 
 Model files saved to /models/.
 
-📊 Dashboard Preview
+## 📊 Dashboard Preview
 
 ✔ Prediction history
+
 ✔ Top-3 roles
+
 ✔ Raw matched job titles
+
 ✔ Date/time
+
 ✔ Charts for matches
 
 
-📁 API Endpoints
+## 📁 API Endpoints
 🔹 POST /api/predict
 
 Predict role from manual skill input
@@ -177,7 +185,7 @@ History of predictions
 
 List ML models
 
-🙌 Screenshots 
+## 🙌 Screenshots 
 ![alt text](image.png)
 ![alt text](image-2.png)
 ![alt text](image-4.png)
@@ -186,16 +194,20 @@ List ML models
 ## 🎓 Future Enhancements
 
 Job recommendation from LinkedIn / Indeed scraping
+
 Salary prediction
+
 Career roadmap generator
+
 AI-based course recommendations
+
 Real-time embeddings using OpenAI API (optional)
 
 ## 💡 Author
 
-Chandra D
-📍 Mysore, India
-📧 preethamchandu1308@gmail.com
-💼 Data Science & AI Engineer
+* Chandra D
+* 📍 Mysore, India
+* 📧 preethamchandu1308@gmail.com
+* 💼 Data Science & AI Engineer
 
 # ⭐ If this project helped you — don’t forget to star the repo!
